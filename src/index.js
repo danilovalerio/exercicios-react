@@ -9,6 +9,7 @@ import ReactDOM from 'react-dom'
 // import FamiliaSilva from './componentes/FamiliaSilva'
 import Familia from './componentes/Familia'
 import Membro from './componentes/Membro'
+import FamiliaSilva from './componentes/FamiliaSilva';
 
 
 
@@ -21,6 +22,10 @@ ReactDOM.render(
                 <Membro nome="Danilo" sobrenome="Silva"></Membro>
                 <Membro nome="Daniela" sobrenome="Silva"></Membro>
             </Familia>
+
+        </div>
+        <div>
+            <FamiliaSilva sobrenome="Silva"/>
         </div>
         
 
