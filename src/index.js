@@ -11,7 +11,8 @@ import ReactDOM from 'react-dom'
 // import Membro from './componentes/Membro'
 // import FamiliaSilva from './componentes/FamiliaSilva';
 // import ComponenteComFuncao from './componentes/ComponenteComFuncao'
-import Pai from './componentes/Pai'
+// import Pai from './componentes/Pai'
+import ComponenteCasse from './componentes/ComponenteClasse'
 
 
 
@@ -20,7 +21,10 @@ const elemento = document.getElementById('root')
 ReactDOM.render(
     <div>
         <div>
-            <Pai/>
+            <ComponenteCasse valor="Bem legals"/>
+
+
+            {/* <Pai/> */}
 
 
             {/* <ComponenteComFuncao/> */}
