@@ -10,7 +10,8 @@ import ReactDOM from 'react-dom'
 // import Familia from './componentes/Familia'
 // import Membro from './componentes/Membro'
 // import FamiliaSilva from './componentes/FamiliaSilva';
-import ComponenteComFuncao from './componentes/ComponenteComFuncao'
+// import ComponenteComFuncao from './componentes/ComponenteComFuncao'
+import Pai from './componentes/Pai'
 
 
 
@@ -19,7 +20,10 @@ const elemento = document.getElementById('root')
 ReactDOM.render(
     <div>
         <div>
-            <ComponenteComFuncao/>
+            <Pai/>
+
+
+            {/* <ComponenteComFuncao/> */}
 
 
             {/* <Familia sobrenome="Viana">
