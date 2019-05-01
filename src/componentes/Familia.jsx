@@ -1,12 +1,17 @@
 import React from 'react'
+//importando a função que clona as propriedades para os filhos
+import {propsParaFilhos} from '../utils/utils'
 
 export default props => 
     <div>
         <h1>Família</h1>
+        {/* chamamos a função e passamos as props */}
+        {propsParaFilhos}
+
         {/* Com a função map dentro do React para clonar props para todos os filhos */}
-        {React.Children.map(props.children, filho => {
+        {/* {React.Children.map(props.children, filho => {
             return React.cloneElement(filho, {...props })
-        })}
+        })} */}
 
         {/* Solução 2 - foi passada todas as props para o filho 
             Obs.: Operador spread ... espalha as props clonadas para o objeto */}
