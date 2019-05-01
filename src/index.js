@@ -5,7 +5,9 @@ import ReactDOM from 'react-dom'
 //import PrimeiroComponente from './componentes/PrimeiroComponente'
 
 // import {CompA, CompB as B} from './componentes/MultiplosComponentes'
-import MultiplosElementos from './componentes/MultiplosElementos'
+// import MultiplosElementos from './componentes/MultiplosElementos'
+import FamiliaSilva from './componentes/FamiliaSilva'
+
 
 
 const elemento = document.getElementById('root')
@@ -13,16 +15,22 @@ const elemento = document.getElementById('root')
 ReactDOM.render(
     <div>
         <div>
+            <FamiliaSilva/>
+        </div>
+        
+
+
+        {/* <div>
            <MultiplosElementos/> 
-        </div>
+        </div> */}
 
+        {/* <div>
+            <CompA valor="Sou o CompA"></CompA>
+            <B valor="Sou o CompB"></B>
+        </div> */}
 
-        <div>
-            {/* <CompA valor="Sou o CompA"></CompA>
-            <B valor="Sou o CompB"></B> */}
-        </div>
-        <div>
-            {/* <PrimeiroComponente valor="Bem vindo as props!" abcd={12345}></PrimeiroComponente> */}
-        </div>
+        {/* <div>
+            <PrimeiroComponente valor="Bem vindo as props!" abcd={12345}></PrimeiroComponente>
+        </div> */}
     </div>    
 , elemento)
