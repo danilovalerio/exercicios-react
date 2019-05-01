@@ -4,15 +4,22 @@ import ReactDOM from 'react-dom'
 //importando o componentes
 //import PrimeiroComponente from './componentes/PrimeiroComponente'
 
-import {CompA, CompB as B} from './componentes/MultiplosComponentes'
+// import {CompA, CompB as B} from './componentes/MultiplosComponentes'
+import MultiplosElementos from './componentes/MultiplosElementos'
+
 
 const elemento = document.getElementById('root')
 //passa a string para o elemento
 ReactDOM.render(
     <div>
         <div>
-            <CompA valor="Sou o CompA"></CompA>
-            <B valor="Sou o CompB"></B>
+           <MultiplosElementos/> 
+        </div>
+
+
+        <div>
+            {/* <CompA valor="Sou o CompA"></CompA>
+            <B valor="Sou o CompB"></B> */}
         </div>
         <div>
             {/* <PrimeiroComponente valor="Bem vindo as props!" abcd={12345}></PrimeiroComponente> */}
