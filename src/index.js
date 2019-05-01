@@ -8,6 +8,6 @@ const elemento = document.getElementById('root')
 //passa a string para o elemento
 ReactDOM.render(
     <div>
-        <PrimeiroComponente></PrimeiroComponente>
+        <PrimeiroComponente valor="Bem vindo as props!" abcd={12345}></PrimeiroComponente>
     </div>    
 , elemento)

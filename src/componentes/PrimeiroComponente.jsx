@@ -2,19 +2,9 @@
 import React from 'react'
 
 //Com Arrow Function
-export default () => 
+export default (props) => 
     <div>
-        <h1>Primeiro Componente (Arrow)!</h1>
+        <h1>{props.valor}</h1>
+        <h2>{props.abcd}</h2>
+        <p>{Math.random()}</p>
     </div>
-
-
-//Pode exportar uma função anonima se quiser
-// export default function (){
-//     return <h1>Primeiro Componente!</h1>
-// }
-
-//function primeiro(){
-//    return <h1>Primeiro Componente!</h1>
-//}
-
-//export default primeiro
