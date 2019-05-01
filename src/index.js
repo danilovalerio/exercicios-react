@@ -6,7 +6,9 @@ import ReactDOM from 'react-dom'
 
 // import {CompA, CompB as B} from './componentes/MultiplosComponentes'
 // import MultiplosElementos from './componentes/MultiplosElementos'
-import FamiliaSilva from './componentes/FamiliaSilva'
+// import FamiliaSilva from './componentes/FamiliaSilva'
+import Familia from './componentes/Familia'
+import Membro from './componentes/Membro'
 
 
 
@@ -15,7 +17,10 @@ const elemento = document.getElementById('root')
 ReactDOM.render(
     <div>
         <div>
-            <FamiliaSilva/>
+            <Familia>
+                <Membro nome="Danilo" sobrenome="Silva"></Membro>
+                <Membro nome="Daniela" sobrenome="Silva"></Membro>
+            </Familia>
         </div>
         
 
