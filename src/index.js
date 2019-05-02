@@ -22,7 +22,7 @@ const elemento = document.getElementById('root')
 ReactDOM.render(
     <div>
         <div>
-            <Contador numero={0}/>
+            <Contador numeroInicial={10}/>
 
 
             {/* <ComponenteCasse valor="Bem legals"/> */}

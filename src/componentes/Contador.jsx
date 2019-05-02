@@ -1,19 +1,36 @@
 import React, {Component } from 'react'
 
 export default class Contador extends Component{
+    state = {
+        // numero: 0
+        numero: this.props.numeroInicial
+    }
    
 
     maisUm = () => {
-        // this.props.numero++
-        console.log(this)
+        this.alterarNumero(1)
+        // this.setState({numero: this.state.numero + 1})
+    }
+
+    menosUm = () => {
+        this.alterarNumero(-1)
+        // this.setState({numero: this.state.numero - 1})
+    }
+
+    //Na chamada do onclick tem que ser arrow function por conta da passagem de parâmetro
+    alterarNumero = (diferenca) => {
+        this.setState({numero: this.state.numero + diferenca})
     }
     
     render(){
         return(
             <div>
-                <div>Número: {this.props.numero}</div>
+                <h1>Número: {this.state.numero}</h1>
                 <button onClick={this.maisUm}> + Inc</button>
-                <button>- Dec</button>
+                <button onClick={this.menosUm}>- Dec</button>
+                <button onClick={() => this.alterarNumero(10)}> + 10</button>
+                <button onClick={() => this.alterarNumero(-10)}> - 10</button>
+            
             </div>
         )
     }
