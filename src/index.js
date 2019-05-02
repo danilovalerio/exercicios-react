@@ -2,17 +2,16 @@ import React from 'react'
 import ReactDOM from 'react-dom'
 
 //importando o componentes
-//import PrimeiroComponente from './componentes/PrimeiroComponente'
+import PrimeiroComponente from './componentes/PrimeiroComponente'
 
-// import {CompA, CompB as B} from './componentes/MultiplosComponentes'
-// import MultiplosElementos from './componentes/MultiplosElementos'
-// import FamiliaSilva from './componentes/FamiliaSilva'
-// import Familia from './componentes/Familia'
-// import Membro from './componentes/Membro'
-// import FamiliaSilva from './componentes/FamiliaSilva';
-// import ComponenteComFuncao from './componentes/ComponenteComFuncao'
-// import Pai from './componentes/Pai'
-// import ComponenteCasse from './componentes/ComponenteClasse'
+import {CompA, CompB as B} from './componentes/MultiplosComponentes'
+import MultiplosElementos from './componentes/MultiplosElementos'
+import FamiliaSilva from './componentes/FamiliaSilva'
+import Familia from './componentes/Familia'
+import Membro from './componentes/Membro'
+import ComponenteComFuncao from './componentes/ComponenteComFuncao'
+import Pai from './componentes/Pai'
+import ComponenteCasse from './componentes/ComponenteClasse'
 import Contador from './componentes/Contador'
 
 
@@ -25,38 +24,38 @@ ReactDOM.render(
             <Contador numeroInicial={10}/>
 
 
-            {/* <ComponenteCasse valor="Bem legals"/> */}
+            <ComponenteCasse valor="Bem legals"/> 
 
 
-            {/* <Pai/> */}
+            <Pai/>
 
 
-            {/* <ComponenteComFuncao/> */}
+            <ComponenteComFuncao/>
 
 
-            {/* <Familia sobrenome="Viana">
+            <Familia sobrenome="Viana">
                 <Membro nome="Danilo" />
                 <Membro nome="Daniela" sobrenome="Silva"></Membro>
-            </Familia> */}
+            </Familia>
 
         </div>
-        {/* <div>
+        <div>
             <FamiliaSilva sobrenome="Silva"/>
-        </div> */}
+        </div>
         
 
 
-        {/* <div>
+        <div>
            <MultiplosElementos/> 
-        </div> */}
+        </div>
 
-        {/* <div>
+        <div>
             <CompA valor="Sou o CompA"></CompA>
             <B valor="Sou o CompB"></B>
-        </div> */}
+        </div>
 
-        {/* <div>
+        <div>
             <PrimeiroComponente valor="Bem vindo as props!" abcd={12345}></PrimeiroComponente>
-        </div> */}
+        </div>
     </div>    
 , elemento)
